@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/alarm-clock.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Reminder Application</title>
+</head>
+
+<body>
+    <!-- reminder (delete, check and modify) -->
+    <div class="container">
+        <div class="col">
+            <div class="title">
+                <h1>Kaleyra Reminder App</h1>
+                <button id="newReminder" class="btn">+</button>
+            </div>
+            <p class="paragraph">Your Reminders will come here.</p>
+            <p class="smallPara">(Create, Modify, Check, Delete)</p>
+            <ul class="list">
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- reminder alarm warning with time -->
+    <div class="alarm-container">
+        <div class="alarm-col">
+            <div class="alarm-title">
+                <p class="paragraph">Set an alarmed reminder...</p>
+                <p class="smallPara">(An alarm rings when the due time ends)</p>
+            </div>
+            <div class="alarm-list">
+                <input id="alarmTime" type="datetime-local">
+                <button id="alarmButton" class="btn-reminder" onclick="setAlarm(this);">Set Reminder</button>
+            </div>
+            <div id="alarmOptions" style="display:none;">
+                <button onclick="snooze();" class="btn-check width">Snooze</button>
+                <button onclick="stopAlarm();" class="btn-delete width">Stop</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p>Kaleyra India</p>
+        <p>Copyright &copy; Sidharth juyal, All rights reserved, 2022</p>
+    </footer>
+</body>
+
+</html>
