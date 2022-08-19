@@ -198,6 +198,27 @@ body {
     justify-content: space-evenly;
 }
 
+/* information */
+.infoHeader{
+    text-align: center;
+    color:var(--text-color);
+    font-size: var(--h1-font-size);
+    margin:1rem;
+}
+
+.info-list{
+    color:var(--text-color);
+    margin:1.5rem 1rem 2rem 2rem;
+}
+
+.margin{
+    margin:2rem auto;
+    width:40%;
+    padding:2rem;
+}
+
+
+
 /* footer */
 
 footer {
@@ -207,9 +228,7 @@ footer {
     color: var(--text-color);
     padding: 1rem 2rem;
     text-align: center;
-    position: fixed;
     width: 100%;
-    bottom: 0;
     font-size: var(--small-font-size);
 }
 
@@ -262,5 +281,14 @@ footer>p {
         justify-content: center;
         align-items: center;
     }
+    
+    .ul-cont{
+        width:90%;
+        text-align: left;
+    }
 
+    .margin{
+        width:100%;
+        padding:0.4rem 0 0.4rem 0.4rem;;
+    }
 }
