@@ -4,7 +4,7 @@ const newReminder = document.getElementById("newReminder");
 // Create reminder function 
 function createReminder(id, message) {
     // Error handling
-    if (message && message.length > 15) {
+    if (message && message.length > 25) {
         alert("We only support 25 characters");
         return;
     } else if (!message) {
