@@ -254,10 +254,6 @@ footer>p{
         text-align: center;
     }
 
-    .btn-delete {
-        margin-left: 1rem;
-    }
-
     .alarm-list {
         display: flex;
         flex-direction: column;
